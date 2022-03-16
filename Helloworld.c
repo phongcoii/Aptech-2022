@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 int main(){
-    printf("%s from tam trinh %s luv!", "\t123 sida", "with");
-    printf("mot nam co %d thang\n",12);
-    printf("Pi = %f", 3.14159265359);
-    printf("\nPi = %.2f", 3.14159265359);
-    printf("\nPi = %.4f", 3.14159265359);
-    printf("\a\a\a");
+    float p,n,r;
+    p = 1000;
+    n = 2.5;
+    r = 10.5;
+    
+    printf("\n Amount is : %f", p*n*r/100);
+    
     return 0;
 }
