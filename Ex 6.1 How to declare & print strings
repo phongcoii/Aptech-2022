@@ -1,0 +1,13 @@
+void main ()
+{
+    int a= 10;
+    float b = 24.67892345;
+    char ch = 'A';
+    
+    printf("integer dât = %d", a);
+    printf("float data =%f", b);
+    printf("character = %c", ch);
+    printf("This prints the string");
+    printf("%s","This also prints a string");
+    
+}
