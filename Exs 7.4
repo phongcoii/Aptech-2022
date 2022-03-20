@@ -2,7 +2,7 @@
 
 int main()
 {
-    int grade;
+    char grade;
     int salary;
     int allowence;
     int gross_income;
@@ -10,13 +10,13 @@ int main()
     printf("Wage is ");
     scanf("%d", &gross_income);
     
-    printf("Employees grade is :\n 1. A\n 2. B \n 3. Others \nEnter grade: ");
-    scanf("%d", &grade);
+    printf("Employees grade is : ");
+    scanf("%c", &grade);
     
-    if (grade == 1) {
+    if (grade == 'A') {
         allowence = 300;
     }
-    else if (grade == 2){
+    else if (grade == 'B'){
         allowence = 250;
     }
     else{
