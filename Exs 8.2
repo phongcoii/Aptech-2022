@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+void main()
+{
+    char get_character;
+    
+    printf("Enter program character : ");
+    scanf(" %c", &get_character);
+    
+    switch (get_character)
+    {
+        case 'A':
+            printf("Ada\n");
+            break;
+        case 'B':
+            printf("Basic\n");
+            break;
+        case 'C' :
+            printf("Cobol\n");
+            break;
+        case 'D' :
+            printf("dBase III\n");
+            break;
+        case 'F' :
+            printf("Fortan\n");
+            break;
+        case 'P' :
+            printf("Pascal\n");
+            break;
+        case 'V':
+            printf("Visual C++\n");
+            break;
+        default :
+            printf("Invalid character\n");
+            break;
+    }
+}
