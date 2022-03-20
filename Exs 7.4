@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int grade;
+    int salary;
+    int allowence;
+    int gross_income;
+    
+    printf("Wage is ");
+    scanf("%d", &gross_income);
+    
+    printf("Employees grade is :\n 1. A\n 2. B \n 3. Others \nEnter grade: ");
+    scanf("%d", &grade);
+    
+    if (grade == 1) {
+        allowence = 300;
+    }
+    else if (grade == 2){
+        allowence = 250;
+    }
+    else{
+        allowence = 100;
+    }
+    salary = gross_income + allowence;
+    printf("Employees salary is %d\n", salary);
+    
+    return 0;
+    
+}
