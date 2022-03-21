@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+void main()
+{
+    int count = 5;
+    while ( count <= 100 )
+    {
+        printf("\nIteration number %d\n", count);
+        count += 5;
+        
+    }
+    printf("\n The loops is complete. \n");
+    }
