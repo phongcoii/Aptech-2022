@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void main()
+{
+    char i;
+    
+    printf("Enter : \n1. letter \n2. number \n3. special character");
+    scanf(" %c", &i);
+    
+    if ((i >= 'a' && i <= 'z' ) || (i >= 'A' && i <= 'Z' ))
+    
+        printf(" %c Is a character", i);
+    
+    else if ( i >= 0 )
+        printf(" %c Is a number", i);
+    else if ( i != )
+        printf
+        
+    
+}
