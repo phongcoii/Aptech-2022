@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void main()
+{
+    char i;
+    
+    printf("Enter : ");
+    scanf("%c", &i);
+    
+    if ((i >= 'a' && i <= 'z' ) || (i >= 'A' && i <= 'Z' ))
+    
+        printf(" %c is character\n", i);
+    
+    else if ( i >= '0' && i <= '9')
+        printf(" %c is number\n", i);
+    else
+        printf(" %c is special character\n", i);
+    
+        
+    
+}
