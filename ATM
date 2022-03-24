@@ -1,0 +1,66 @@
+#include <stdio.h>
+void main()
+{
+    int num;
+    int count = 3;
+    int pin = 123;
+    int balance = 5000;
+    int other_transactions = 1;
+
+    
+    
+    for ( count = 2; count >= 0; count--)
+    {
+        printf("Enter pin number : ");
+        scanf("%d", &num);
+    
+    {
+        if ( num != pin )
+        {
+            printf(" Invalid pin number\n");
+        }
+        else if ( num == pin)
+        {
+            while ( other_transactions == 1)
+            {
+            int option;
+            printf("Choose your option\n");
+            printf("1. Check balance\n");
+            printf("2. Deposit\n");
+            printf("3. Withdrawal\n");
+            scanf("%d", &option);
+            if (option == 1)
+            {
+                printf("Your balance is %d\n", balance);
+            }
+            else if (option == 2)
+            {
+                int amount;
+                printf("Put your money in slot \n");
+                printf("Deposit amount : ");
+                scanf("%d", &amount);
+                balance += amount;
+            }
+            else if ( option == 3)
+            {
+                int withdraw;
+                printf("How much money do you want to withdraw: \n");
+                scanf("%d", &withdraw);
+                balance -= withdraw;
+            }
+            else
+            {
+                printf(" Invalid action\n");
+            }
+            
+            printf("Other Transacions ?\n1. Yes\n2. No \n");
+            scanf("%d", &other_transactions);
+            }
+        }
+        printf(" Remaining trial : %d\n", count);
+        printf(" Retry ");
+        }
+    } while ( count == 0);
+    printf(" Your account has been locked for 4 hours\n");
+    
+}
