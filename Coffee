@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+void main()
+{
+    int total = 0;
+    int product;
+    int others = 1;
+    int water = 2;
+    int coffee = 5;
+    int bread = 4;
+    
+
+    
+    while ( others == 1)
+    {
+        printf("Choose your product : ");
+        scanf("%d", &product);
+        {
+        if ( product == 1)
+        
+        {
+                printf("Cost %d$ ", bread);
+                total +=4;
+        }
+            else if ( product == 2)
+            {
+                printf("Cost %d$ ", coffee);
+                total +=5;
+            }
+            else if ( product == 3)
+            {
+                printf("Cost %d$ ", water);
+                total +=2;
+            }
+        else
+        {
+            printf("Invalid options");
+        }
+        }
+        printf(" More ? \n1. Yes \n2. No\n");
+        scanf("%d", &others);
+    }
+    
+printf("Your total bill is %d\n", total);
+}
