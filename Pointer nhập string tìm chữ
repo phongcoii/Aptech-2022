@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char a, str[81], *ptr;
+    int i;
+    
+    printf("\nEnter a book : \n");
+    gets(str);
+    
+    printf("\nEnter character to search for: ");
+    a = getchar();
+    ptr = strchr(str, a);
+    
+    
+    printf("\nString starts at address: %u\n", str);
+    printf("\nFirst occurence of the character is at address: %u\n", ptr);
+    printf("\n Position of first occurence (starting form 0) is : %d\n", ptr-str);
+    
+    
+    if (ptr == 0)
+{
+    printf("no %c \n", a);
+}else {
+    printf("there's %c \n", a);
+}
+    
+    
+    return 0;
+}
