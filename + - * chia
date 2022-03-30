@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <math.h>
+
+int tich(int a, int b);
+int thuong(int a, int b);
+
+char ch;
+int main()
+{
+    int a,b,tinhTich, divbb;
+    printf("nhap a :");
+    scanf("%d", &a);
+    
+    printf("nhap b :");
+    scanf("%d", &b);
+    
+    getchar();
+    scanf("%c", &ch);
+    
+    int sum = a + b;
+    int min = a - b;
+    tinhTich = tich(a,b);
+    divbb= thuong(a, b);
+
+    
+    switch (ch)
+    {
+        case '+':
+            printf("%d + %d = %d\n",a,b,sum);
+            break;
+        case '-':
+            printf("%d - %d = %d\n",a,b,min);
+            break;
+        case '*':
+            printf("%d * %d = %d\n",a,b,tinhTich);
+        case '/':
+            printf("%d / %d = %d\n", a,b,divbb);
+
+    }
+}
+int tich(int a , int b)
+{
+    return a*b;
+}
+int thuong(int a, int b)
+{
+    return a/b;
+}
