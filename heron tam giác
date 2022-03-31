@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+
+float Getarea(float a, float b, float c);
+
+void main()
+{
+    float a,b,c;
+    float Getarea(float a,float b,float c);
+    
+    
+    printf("\nEnter a:\nb: \nc:\n");
+    scanf("%f%f%f", &a,&b,&c);
+    
+    if (a >= b + c || b >= a + c || c >= a + b)
+    {
+        printf("\nLỗi");
+    }
+    else
+    {
+        
+        float s;
+        s = Getarea(a,b,c);
+        printf("S = %.2f\n", s);
+    }
+
+}
+float Getarea(float a, float b, float c)
+{
+    float p = (a + b + c)/2;
+    return sqrt(p*(p-a)*(p-b)*(p-c));
+}
+
